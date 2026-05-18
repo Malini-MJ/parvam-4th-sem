@@ -1,0 +1,24 @@
+// 👴 Parent Class
+public class Vehicle {
+    public void startEngine() {
+        System.out.println("🚗 Engine started!");
+    }
+}
+
+// 👦 Child Class
+class Motorcycle extends Vehicle {
+    public void wheelie() {
+        System.out.println("🏍️ Performing a wheelie!");
+    }
+
+    // 🏁 Main method to test
+    public static void main(String[] args) {
+        Motorcycle myBike = new Motorcycle();
+
+        // Call parent method
+        myBike.startEngine();
+
+        // Call child method
+        myBike.wheelie();
+    }
+}
